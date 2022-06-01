@@ -1,0 +1,22 @@
+.tp-dashboard__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tp-dashboard__main {
+  background-color: $primary;
+  background-image: url(https://www-growth.scdn.co/static/home/bursts-tablet.svg);
+  background-size: 200%;
+  background-position: right 40% center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 0 40px;
+  width: auto;
+}

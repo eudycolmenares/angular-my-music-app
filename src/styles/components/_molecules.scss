@@ -1,0 +1,47 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: $black;
+
+  width: 100%;
+  // max-width: 80%;
+  transition: transform .2s ease-in-out;
+  transform: translateX(-100%);
+
+  padding: 30px 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &.show {
+    transform: translateX(0);
+  }
+}
+
+.nav__list {
+  padding: 0;
+}
+
+
+// // Off-canvas menu
+// .modal.offcanvas-menu {
+
+
+//   // .modal-content {
+//   //   height: inherit;
+//   //   color: $secondary;
+//   //   // background-color: darken($primary,5);
+//   //   .nav {
+//   //     .nav-link {
+//   //       color: $secondary;
+//   //       text-align: center;
+//   //     }
+//   //   }
+//   // }
+
+//   &.show {
+//     transform: translateX(0);
+//   }
+// }

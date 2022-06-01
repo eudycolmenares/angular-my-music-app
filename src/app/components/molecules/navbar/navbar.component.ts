@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,11 +6,44 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent implements AfterViewInit {
+
+  @Input() toggleModal = false;
+  navItems = [
+    {
+      name: 'Premium',
+      url: '',
+      importance: 'high'
+    },
+    {
+      name: 'Ayuda',
+      url: '',
+      importance: 'high'
+    },
+    {
+      name: 'Descargar',
+      url: '',
+      importance: 'high'
+    },
+    {
+      name: '',
+      url: '',
+      importance: ''
+    },
+    {
+      name: 'Registrarse',
+      url: '',
+      importance: 'low'
+    },
+    {
+      name: 'Iniciar sesión',
+      url: '',
+      importance: 'low'
+    },
+  ]
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
   }
-
 }

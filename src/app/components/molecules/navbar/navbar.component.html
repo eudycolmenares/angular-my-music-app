@@ -1,1 +1,8 @@
-<i class="fa-solid fa-bars"></i>
+<nav class="nav" [ngClass]="{show: toggleModal}">
+  <ul class="nav__list">
+    <ng-container *ngFor="let item of navItems">
+      <app-nav-item [navItem]="item"></app-nav-item>
+    </ng-container>
+  </ul>
+  <app-logo-light></app-logo-light>
+</nav>

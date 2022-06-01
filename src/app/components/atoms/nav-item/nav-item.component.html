@@ -1,0 +1,9 @@
+<ng-container *ngIf="navItem?.name; else itemEmpty">
+  <li
+    class="nav__item button_pointer"
+    [ngClass]="navItem?.importance ==='high' ? 'nav__item_high-font' : 'nav__item_low-font' "
+  >{{ navItem?.name }}</li>
+</ng-container>
+<ng-template #itemEmpty>
+  <li class="nav__item">-</li>
+</ng-template>

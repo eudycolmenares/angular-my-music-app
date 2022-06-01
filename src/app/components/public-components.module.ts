@@ -7,6 +7,11 @@ import { TpDashboardComponent } from '@components/templates/tp-dashboard/tp-dash
 import { HeaderComponent } from '@components/organisms/header/header.component';
 import { NavbarComponent } from './molecules/navbar/navbar.component';
 import { LogoLightComponent } from '@components/atoms/logo-light/logo-light.component';
+import { ButtonMenuComponent } from './atoms/buttons/button-menu/button-menu.component';
+import { MainTitleComponent } from './atoms/typography/main-title/main-title.component';
+import { SecondaryTitleComponent } from './atoms/typography/secondary-title/secondary-title.component';
+import { ButtonPrimaryComponent } from './atoms/buttons/button-primary/button-primary.component';
+import { NavItemComponent } from './atoms/nav-item/nav-item.component';
 
 @NgModule({
   imports: [
@@ -18,6 +23,11 @@ import { LogoLightComponent } from '@components/atoms/logo-light/logo-light.comp
     HeaderComponent,
     NavbarComponent,
     LogoLightComponent,
+    ButtonMenuComponent,
+    MainTitleComponent,
+    SecondaryTitleComponent,
+    ButtonPrimaryComponent,
+    NavItemComponent,
   ],
   exports: [
     TpLoginComponent,
