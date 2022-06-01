@@ -1,10 +1,5 @@
 <header class="header">
   <app-logo-light></app-logo-light>
   <app-navbar [toggleModal]="showModal"></app-navbar>
-  <app-button-menu
-    class="button_high_index"
-    [toggleModal]="showModal"
-    (toggleEvent)="handleChangeToggle($event)"
-  >
-  </app-button-menu>
+  <app-button class="button_high_index" [buttonProp]="btnMenuProps"></app-button>
 </header>

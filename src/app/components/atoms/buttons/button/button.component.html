@@ -1,0 +1,16 @@
+<ng-container *ngIf="buttonProp.tag === 'button'; else templateA">
+  <button
+    [class]="buttonProp.class"
+    (click)="buttonProp?.action( $event )"
+    [disabled]="buttonProp.disabled"
+  >
+    <i *ngIf="buttonProp.childI" [class]="buttonProp.classI"></i>
+    <ng-container *ngIf="buttonProp.text">{{ buttonProp.text }}</ng-container>
+    <!-- In case is a image -->
+    <!-- <img *ngIf="buttonProp.childImage" src="" alt=""> -->
+  </button>
+</ng-container>
+
+<ng-template #templateA>
+  <a href="http://">Link A</a>
+</ng-template>

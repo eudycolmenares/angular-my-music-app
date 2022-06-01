@@ -1,0 +1,24 @@
+@import '/src/styles/base/settings';
+
+.button {
+  cursor: pointer;
+}
+
+.button-menu {
+  background-color: transparent;
+  border: 0;
+  color: $white;
+  font-size: 22px;
+}
+
+.button-primary {
+  background-color: $secondary;
+  color: $primary;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  border: 0;
+  margin: 20px 0 0 0;
+}

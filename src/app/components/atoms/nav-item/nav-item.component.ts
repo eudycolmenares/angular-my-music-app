@@ -1,10 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-interface Item {
-  name: string,
-  url: string,
-  importance: string,
-}
+import { NavItem } from '@app/core/models/NavBar';
 
 @Component({
   selector: 'app-nav-item',
@@ -14,13 +10,11 @@ interface Item {
 })
 export class NavItemComponent implements OnInit {
 
-  @Input() navItem: Item | null = null;
+  @Input() navItem: NavItem | null = null;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log('navItem: ', this.navItem);
-
   }
 
 }

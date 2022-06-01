@@ -2,8 +2,11 @@
   <li
     class="nav__item button_pointer"
     [ngClass]="navItem?.importance ==='high' ? 'nav__item_high-font' : 'nav__item_low-font' "
+    [routerLink]="[ navItem?.url ]"
   >{{ navItem?.name }}</li>
 </ng-container>
 <ng-template #itemEmpty>
-  <li class="nav__item">-</li>
+  <li
+    class="nav__item"
+  >-</li>
 </ng-template>

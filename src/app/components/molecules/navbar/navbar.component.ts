@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, Input } from '@angular/core';
+import { navBarItems } from '@core/constants/navBar';
 
 @Component({
   selector: 'app-navbar',
@@ -9,38 +10,7 @@ import { Component, AfterViewInit, Input } from '@angular/core';
 export class NavbarComponent implements AfterViewInit {
 
   @Input() toggleModal = false;
-  navItems = [
-    {
-      name: 'Premium',
-      url: '',
-      importance: 'high'
-    },
-    {
-      name: 'Ayuda',
-      url: '',
-      importance: 'high'
-    },
-    {
-      name: 'Descargar',
-      url: '',
-      importance: 'high'
-    },
-    {
-      name: '',
-      url: '',
-      importance: ''
-    },
-    {
-      name: 'Registrarse',
-      url: '',
-      importance: 'low'
-    },
-    {
-      name: 'Iniciar sesión',
-      url: '',
-      importance: 'low'
-    },
-  ]
+  navItems = navBarItems;
 
   constructor() { }
 
