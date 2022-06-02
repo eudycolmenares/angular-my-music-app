@@ -1,0 +1,10 @@
+<div
+  id="button_icon"
+  [class]="buttonProp.class"
+  [ngClass]="{'open': switchButton}" (click)="buttonProp?.action( $event ); toggleButton()"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>

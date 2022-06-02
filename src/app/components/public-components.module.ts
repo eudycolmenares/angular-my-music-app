@@ -9,6 +9,7 @@ import { HeaderComponent } from '@components/organisms/header/header.component';
 import { NavbarComponent } from './molecules/navbar/navbar.component';
 import { ImageComponent } from './atoms/images/image/image.component';
 import { ButtonComponent } from './atoms/buttons/button/button.component';
+import { HamburgerComponent } from './atoms/buttons/hamburger/hamburger.component';
 import { MainTitleComponent } from './atoms/typography/main-title/main-title.component';
 import { SecondaryTitleComponent } from './atoms/typography/secondary-title/secondary-title.component';
 import { NavItemComponent } from './atoms/nav-item/nav-item.component';
@@ -25,6 +26,7 @@ import { NavItemComponent } from './atoms/nav-item/nav-item.component';
     NavbarComponent,
     ImageComponent,
     ButtonComponent,
+    HamburgerComponent,
     MainTitleComponent,
     SecondaryTitleComponent,
     NavItemComponent,
