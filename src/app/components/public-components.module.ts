@@ -7,7 +7,7 @@ import { TpDashboardComponent } from '@components/templates/tp-dashboard/tp-dash
 
 import { HeaderComponent } from '@components/organisms/header/header.component';
 import { NavbarComponent } from './molecules/navbar/navbar.component';
-import { LogoLightComponent } from '@components/atoms/logo-light/logo-light.component';
+import { ImageComponent } from './atoms/images/image/image.component';
 import { ButtonComponent } from './atoms/buttons/button/button.component';
 import { MainTitleComponent } from './atoms/typography/main-title/main-title.component';
 import { SecondaryTitleComponent } from './atoms/typography/secondary-title/secondary-title.component';
@@ -23,7 +23,7 @@ import { NavItemComponent } from './atoms/nav-item/nav-item.component';
     TpDashboardComponent,
     HeaderComponent,
     NavbarComponent,
-    LogoLightComponent,
+    ImageComponent,
     ButtonComponent,
     MainTitleComponent,
     SecondaryTitleComponent,

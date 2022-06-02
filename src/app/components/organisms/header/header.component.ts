@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ButtonProperties } from '@core/models/Buttons';
+import { ImageProperties } from '@core/models/Images';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +11,11 @@ import { ButtonProperties } from '@core/models/Buttons';
 export class HeaderComponent implements OnInit {
 
   btnMenuProps: ButtonProperties;
+  logoImageProps: ImageProperties = {
+    class: 'header__icono',
+    source: 'assets/images/spotify-logo-light.png',
+    alt: 'Logo Spotify'
+  };
   showModal = false;
 
   constructor() {
